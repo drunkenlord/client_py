@@ -3,7 +3,6 @@ language: bash
 os:
   - linux
   - osx
-python: 3.8
   - windows
 python: 3.8
 
