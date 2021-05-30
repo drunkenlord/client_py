@@ -2,14 +2,13 @@ language: bash
 
 os:
   - osx
-before_install:
-  - pip install tox --user
-
-os:
   - linux
+  - windows
+
 before_install:
-  - sudo apt update
-  - sudo apt install python3-pip
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; pip install tox --user         ; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; sudo apt update; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; sudo apt install python3-pip; fi
 
 script:
   - tox -e short-test
