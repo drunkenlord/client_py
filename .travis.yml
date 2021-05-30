@@ -2,7 +2,7 @@ language: bash
 
 os:
   - linux
-  - python
+  - osx
 
 before_install:
   - sudo apt update
