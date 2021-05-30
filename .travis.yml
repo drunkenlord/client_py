@@ -5,9 +5,10 @@ os:
   - osx
 
 before_install:
-  - sudo apt update
-  - sudo apt install python3-pip
-  - sudo pip install tox
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo pip install tox          ; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt update             ; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt install python3-pip; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo pip install tox        ; fi
 
 script:
   - tox -e short-test
