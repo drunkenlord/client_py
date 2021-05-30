@@ -5,5 +5,8 @@ os:
   - osx
   - windows
 
+before_install:
+  - pip install tox
+
 script:
   - tox -e short-test
