@@ -5,8 +5,8 @@ os:
 
 before_install:
   - sudo apt update
-  - sudo apt install python3-pip
-  - pip install tox
+  - sudo apt install python3-pip --user
+  - pip install tox --user
 
 script:
   - tox -e short-test
