@@ -2,8 +2,11 @@ language: bash
 
 os:
   - linux
+python: 3.8
   - osx
+python: 3.8
   - windows
+python: 3.8
 
 before_install:
   - pip install tox
