@@ -4,6 +4,7 @@ os:
   - windows
 
 before_install:
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then choco install pip            ; fi
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then pip install tox             ; fi
 
 script:
