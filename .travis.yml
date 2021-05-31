@@ -1,4 +1,4 @@
-language: python            # this works for Linux but is an error on macOS or Windows
+language: python            # his works for Linux but is an error on macOS or Windows
 jobs:
   include:
     - name: "Python 3.8.0 on Linux"
@@ -19,7 +19,7 @@ jobs:
       before_install:
         - choco install python --version 3.8.0
         - python -m pip install --upgrade pip
-        - pip install tox 
+        - pip install tox
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 install: pip3 install --upgrade pip  # all three OSes agree about 'pip3'
 # 'python' points to Python 2.7 on macOS but points to Python 3.8 on Linux and Windows
