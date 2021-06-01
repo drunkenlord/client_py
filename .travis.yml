@@ -1,6 +1,18 @@
 language: python
 jobs:
   include:
+    - name: "Linux"
+      os: linux
+      before_install:
+        - sudo apt update
+        - sudo apt install python3-pip
+        - sudo pip install tox
+    - name: "macOS"
+      os: osx
+      osx_image: xcode11.2
+      language: shell
+      before_install:
+        - sudo pip install tox
     - name: "Windows"
       os: windows
       language: shell
