@@ -1,7 +1,7 @@
 language: python            #  This works for Linux but is an error on macOS or Windows
 jobs:
   include:
-     - name: "Linux"
+    - name: "Linux"
       os: linux
       before_install:
         - sudo apt update
