@@ -7,12 +7,13 @@ jobs:
         - sudo apt update
         - sudo apt install python2.7 python-pip
         - sudo pip install tox
-    - name: "Python 3.8.0 on Xenial Linux"
-      python: 3.8
+    - name: "Python version 3.8 on Linux"
+      os: linux
       before_install:
         - sudo apt update
+        - sudo apt install python3.8
+        - sudo apt install python3-pip
         - sudo pip install tox
-
     - name: "Python 2.7 on macOS"
       os: osx
       osx_image: xcode11.2
@@ -48,5 +49,6 @@ jobs:
         - python -m pip install tox-travis
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 
+install: pip install --upgrade pip
 script:
   - tox -e short-test
