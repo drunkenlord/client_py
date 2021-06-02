@@ -1,4 +1,7 @@
-language: python #
+language: python
+python:
+  - "2.7"
+  - "3.8"
 jobs:
   include:
     - name: "Python version 2.7 and 3.8 on Linux"
