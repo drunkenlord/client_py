@@ -1,15 +1,11 @@
 language: python #
 jobs:
   include:
-    - name: "Python version 2.7 on Linux"
+    - name: "Python version 2.7 and 3.8 on Linux"
       os: linux
       before_install:
         - sudo apt-get update
         - sudo apt install python2.7 python-pip
-        - sudo pip install tox
-    - name: "Python version 3.8 on Linux"
-      os: linux
-      before_install:
         - sudo add-apt-repository ppa:deadsnakes/ppa -y
         - sudo apt-get update
         - sudo apt install python3.8
