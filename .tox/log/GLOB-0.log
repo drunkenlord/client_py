@@ -1,0 +1,70 @@
+action: GLOB, msg: packaging
+cwd: /Users/srikar_reddy/Downloads/drunken_Hapi/client-python-master
+cmd: /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python setup.py sdist --formats=zip --dist-dir /Users/srikar_reddy/Downloads/drunken_Hapi/client-python-master/.tox/dist
+running sdist
+running egg_info
+creating hapiclient.egg-info
+writing requirements to hapiclient.egg-info/requires.txt
+writing hapiclient.egg-info/PKG-INFO
+writing top-level names to hapiclient.egg-info/top_level.txt
+writing dependency_links to hapiclient.egg-info/dependency_links.txt
+writing manifest file 'hapiclient.egg-info/SOURCES.txt'
+reading manifest file 'hapiclient.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'hapiclient.egg-info/SOURCES.txt'
+running check
+creating hapiclient-0.1.9b4
+creating hapiclient-0.1.9b4/hapiclient
+creating hapiclient-0.1.9b4/hapiclient.egg-info
+creating hapiclient-0.1.9b4/hapiclient/test
+copying files to hapiclient-0.1.9b4...
+copying CHANGES.txt -> hapiclient-0.1.9b4
+copying LICENSE.txt -> hapiclient-0.1.9b4
+copying MANIFEST.in -> hapiclient-0.1.9b4
+copying README.md -> hapiclient-0.1.9b4
+copying setup.py -> hapiclient-0.1.9b4
+copying hapiclient/__init__.py -> hapiclient-0.1.9b4/hapiclient
+copying hapiclient/hapi.py -> hapiclient-0.1.9b4/hapiclient
+copying hapiclient/hapitime.py -> hapiclient-0.1.9b4/hapiclient
+copying hapiclient/util.py -> hapiclient-0.1.9b4/hapiclient
+copying hapiclient.egg-info/PKG-INFO -> hapiclient-0.1.9b4/hapiclient.egg-info
+copying hapiclient.egg-info/SOURCES.txt -> hapiclient-0.1.9b4/hapiclient.egg-info
+copying hapiclient.egg-info/dependency_links.txt -> hapiclient-0.1.9b4/hapiclient.egg-info
+copying hapiclient.egg-info/requires.txt -> hapiclient-0.1.9b4/hapiclient.egg-info
+copying hapiclient.egg-info/top_level.txt -> hapiclient-0.1.9b4/hapiclient.egg-info
+copying hapiclient/test/__init__.py -> hapiclient-0.1.9b4/hapiclient/test
+copying hapiclient/test/readcompare.py -> hapiclient-0.1.9b4/hapiclient/test
+copying hapiclient/test/test_chunking.py -> hapiclient-0.1.9b4/hapiclient/test
+copying hapiclient/test/test_hapi.py -> hapiclient-0.1.9b4/hapiclient/test
+copying hapiclient/test/test_hapitime2datetime.py -> hapiclient-0.1.9b4/hapiclient/test
+copying hapiclient/test/test_hapitime_reformat.py -> hapiclient-0.1.9b4/hapiclient/test
+Writing hapiclient-0.1.9b4/setup.cfg
+creating /Users/srikar_reddy/Downloads/drunken_Hapi/client-python-master/.tox/dist
+creating '/Users/srikar_reddy/Downloads/drunken_Hapi/client-python-master/.tox/dist/hapiclient-0.1.9b4.zip' and adding 'hapiclient-0.1.9b4' to it
+adding 'hapiclient-0.1.9b4'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info'
+adding 'hapiclient-0.1.9b4/hapiclient'
+adding 'hapiclient-0.1.9b4/PKG-INFO'
+adding 'hapiclient-0.1.9b4/MANIFEST.in'
+adding 'hapiclient-0.1.9b4/README.md'
+adding 'hapiclient-0.1.9b4/CHANGES.txt'
+adding 'hapiclient-0.1.9b4/setup.py'
+adding 'hapiclient-0.1.9b4/setup.cfg'
+adding 'hapiclient-0.1.9b4/LICENSE.txt'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info/PKG-INFO'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info/SOURCES.txt'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info/requires.txt'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info/top_level.txt'
+adding 'hapiclient-0.1.9b4/hapiclient.egg-info/dependency_links.txt'
+adding 'hapiclient-0.1.9b4/hapiclient/test'
+adding 'hapiclient-0.1.9b4/hapiclient/hapitime.py'
+adding 'hapiclient-0.1.9b4/hapiclient/util.py'
+adding 'hapiclient-0.1.9b4/hapiclient/__init__.py'
+adding 'hapiclient-0.1.9b4/hapiclient/hapi.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/test_chunking.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/__init__.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/test_hapitime_reformat.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/test_hapi.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/readcompare.py'
+adding 'hapiclient-0.1.9b4/hapiclient/test/test_hapitime2datetime.py'
+removing 'hapiclient-0.1.9b4' (and everything under it)

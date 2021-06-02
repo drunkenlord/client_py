@@ -1,19 +1,34 @@
 language: python
 jobs:
   include:
-    - name: "Linux"
+    - name: "Python version 2.7 on Linux"
       os: linux
       before_install:
         - sudo apt update
-        - sudo apt install python3-pip
+        - sudo apt install python2.7 python-pip
         - sudo pip install tox
+    - name: "Python version 3.8 on Linux"
+      os: linux
+      before_install:
+        - sudo apt update
+        - sudo apt install python3.8 python3-pip
+        - sudo pip install tox
+
     - name: "macOS"
       os: osx
       osx_image: xcode11.2
       language: shell
       before_install:
         - sudo pip install tox
-    - name: "Windows"
+    - name: "Python version 2.7 on Windows"
+      os: windows
+      language: shell
+      before_install:
+        - choco install python --version 2.7.17
+        - python -m pip install --upgrade pip
+        - pip install tox
+      env: PATH=/c/Python27:/c/Python27/Scripts:$PATH
+    - name: "With Python version 3.8 on Windows"
       os: windows
       language: shell
       before_install:
@@ -21,6 +36,7 @@ jobs:
         - python -m pip install --upgrade pip
         - pip install tox
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
+
 install: pip3 install --upgrade pip
 script:
   - tox -e short-test
