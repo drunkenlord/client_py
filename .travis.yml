@@ -1,19 +1,18 @@
 language: python
 jobs:
   include:
-    - name: "Python version 2.7 on Linux"
+    - name: "Python version 2.7 and 3.8 on Linux"
       os: linux
+      python:
+        - 2.7
+        - 3.8
       before_install:
-        - sudo apt update
-        - sudo apt install python2.7 python-pip
-        - sudo pip install tox
-    - name: "Python version 3.8 on Linux"
-      os: linux
-      before_install:
-        - sudo apt update
-        - sudo apt install python3.8
-        - sudo apt install python3-pip
-        - sudo pip install tox
+        - sudo apt-get update
+        - sudo add-apt-repository ppa:deadsnakes/ppa -y
+        - sudo apt install python
+        - sudo apt install python-pip
+        - sudo pip install tox-travis
+
     - name: "Python 2.7 on macOS"
       os: osx
       osx_image: xcode11.2
@@ -26,7 +25,7 @@ jobs:
       language: shell       # 'language: python' is an error on Travis CI macOS
       before_install:
         - python3 --version
-        - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -y
         - brew install python@3.8
         - python3 -m pip install --upgrade pip
         - sudo pip install tox-travis
