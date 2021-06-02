@@ -21,7 +21,7 @@ jobs:
         - sudo pip install tox-travis
     - name: "Python 3.8.0 on macOS 10.14"
       os: osx
-      osx_image: xcode11.3  # Python 3.8.0 running on macOS 10.14.6
+      osx_image: xcode11.4  # Python 3.8.0 running on macOS 10.14.6
       language: shell       # 'language: python' is an error on Travis CI macOS
       before_install:
         - python3 --version
