@@ -5,11 +5,12 @@ jobs:
       os: linux
       before_install:
         - sudo apt-get update
-        - sudo apt install python2.7 python-pip -y
+        - sudo apt install python2.7 python-pip
         - sudo pip install tox
     - name: "Python version 3.8 on Linux"
       os: linux
       before_install:
+        - sudo add-apt-repository ppa:deadsnakes/ppa -y
         - sudo apt-get update
         - sudo apt install python
         - sudo apt install python3-pip
