@@ -36,6 +36,6 @@ jobs:
         - pip install tox-travis
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 
-install: pip3 install --upgrade pip
+install: pip install --upgrade pip
 script:
   - tox -e short-test
